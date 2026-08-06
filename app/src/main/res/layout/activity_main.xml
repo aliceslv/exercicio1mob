@@ -78,7 +78,7 @@
 
                 <ImageView
                     android:layout_width="57dp"
-                    android:layout_height="57dp"
+                    android:layout_height="56dp"
                     android:src="@drawable/facebook"
                     android:layout_margin="8dp"/>
 
