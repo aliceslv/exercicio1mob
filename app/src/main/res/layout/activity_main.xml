@@ -65,7 +65,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:textSize="18sp"
-                android:text="Social Login"
+                android:text="Login"
                 android:textColor="@color/white"
                 android:layout_marginTop="32dp"/>
 
