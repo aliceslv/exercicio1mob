@@ -15,7 +15,7 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
-        val loginUsuario = intent.getStringExtra("LOGIN_USUARIO")?: "Desconhecido"
-        binding.txtusuario.text="Bem vindo, $loginUsuario!"
+        val loginUsuario = intent.getStringExtra("LOGIN_USUARIO") ?: "Desconhecido"
+        binding.txtusuario.text = "Bem vindo, $loginUsuario!"
     }
 }
