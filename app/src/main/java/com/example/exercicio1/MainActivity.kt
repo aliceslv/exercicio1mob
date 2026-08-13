@@ -22,15 +22,19 @@ class MainActivity : AppCompatActivity() {
             val login = binding.loginInput.text.toString().trim()
             val senha = binding.senhaInput.text.toString().trim()
 
-            if(login == "AlicePhietro" && senha == "1529"){
+            if (senha.length > 10) {
 
-                val intent = Intent(this, MainActivity2::class.java)
-                intent.putExtra("LOGIN_USUARIO", login)
-                startActivity(intent)
-                finish()
+                if (login == "AlicePhietro" && senha == "12345678910") {
+                    val intent = Intent(this, MainActivity2::class.java)
+                    intent.putExtra("LOGIN_USUARIO", login)
+                    startActivity(intent)
+                    finish()
+                } else {
+                    Toast.makeText(this, "Login e senha incorretos!", Toast.LENGTH_SHORT).show()
+                }
 
             } else {
-                Toast.makeText(this, "Login e senha incorretos!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "A senha deve ter mais de 10 caracteres!", Toast.LENGTH_SHORT).show()
             }
         }
     }
